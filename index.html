@@ -4,9 +4,149 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Alina Khasanova">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>  
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="#" class="sub-domain">LoremIpsum.</a>
+        <a href="#" class="domain">Net</a>
+      </div>
+      <nav class="header__menu menu">
+        <ul class="menu__links">
+          <li class="menu__link">Бизнес</li>
+          <li class="menu__link">О нас</li>
+          <li class="menu__link">Цены</li>
+          <li class="menu__link">Оформить заказ</li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1 class="heading">
+          Lorem ipsum dolor sit ametconsectetur adipiscing
+        </h1>
+        <ul class="hero__list list">
+          At vero eos et accusamus et iusto odio dignissimos ducimus!
+          <li class="list__item">Totam rem aperiam eaque ipsa</li>
+          <li class="list__item">Sit voluptatem accusantium doloremque laudantium</li>
+          <li class="list__item">Sed ut perspiciatis, unde omnis iste natus error</li>
+        </ul>
+        <div class="hero__buttons">
+          <button class="btn btn_primary btn_sm" >заказать</button>
+          <button class="btn btn_secondary btn_sm">подробнее</button>
+        </div>
+      </div>
+    </section>
+    <section class="section order">
+      <div class="container">
+        <h2 class="section__title">Оформление  Заказа</h2>
+        <p class="section__remark">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+        <div class="workflow">
+          <div class="workflow__stage stage">
+            <div class="stage__icon"></div>
+            <p class="stage__description"></p>
+          </div>
+          <div class="divider">
+            <span class="divider__item"></span>
+            <span class="divider__item"></span>
+            <span class="divider__item"></span>
+            <span class="divider__item"></span>
+          </div>
+          <div class="workflow__stage stage">
+            <div class="stage__icon"></div>
+            <p class="stage__description"></p>
+          </div>
+          <div class="divider">
+            <span class="divider__item"></span>
+            <span class="divider__item"></span>
+            <span class="divider__item"></span>
+            <span class="divider__item"></span>
+          </div>
+          <div class="workflow__stage stage">
+            <div class="stage__icon"></div>
+            <p class="stage__description"></p>
+          </div>
+          <div class="divider">
+            <span class="divider__item"></span>
+            <span class="divider__item"></span>
+            <span class="divider__item"></span>
+            <span class="divider__item"></span>
+          </div>
+          <div class="workflow__stage stage">
+            <div class="stage__icon"></div>
+            <p class="stage__description"></p>
+          </div>
+          <div class="divider">
+            <span class="divider__item"></span>
+            <span class="divider__item"></span>
+            <span class="divider__item"></span>
+            <span class="divider__item"></span>
+          </div>
+          <div class="workflow__stage stage">
+            <div class="stage__icon"></div>
+            <p class="stage__description"></p>
+          </div>
+        </div>
+        <form action="post" action="#">
+          <select name="system-type" id="system-type">
+            <option value="default">Выберите тип системы</option>
+            <option value="sed ut perspiciatis">Sed ut perspiciatis</option>
+            <option value="nemo enim ipsam">Nemo enim ipsam</option>
+            <option value="et harum quidem">Et harum quidem</option>
+            <option value="temporibus autem">Temporibus autem</option>
+            <option value="itaque earum rerum">Itaque earum rerum</option>
+          </select>
+          <input type="email" name="email" id="email">
+          <input type="text" name="" id="">
+          <label for="some-range-name">Sed ut perspiciatis, unde omnis iste natus</label> 
+          <div class="range__info"><span class="range-value">75</span> %</div>
+          <input type="range" id="range" name="some-range-name" min="0" max="100" value="75">
+          <label class="btn btn-secondary btn_lg">
+            <input type="file" name="file" id="file">
+          </label>
+          <button type="submit" class="btn btn-primary btn_lg">Отправить</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer__copyright">
+      &#169; 2018 «LoremIpsum.net» Все права защищены.
+    </div>
+    <div class="footer__services">
+      <div class="label">
+        <span class="label__icon"></span>
+        <span class="label__name">Qiwi wallet</span>
+      </div>
+      <div class="label">
+        <span class="label__icon"></span>
+        <span class="label__name">Yandex Money</span>
+      </div>
+      <div class="label">
+        <span class="label__icon"></span>
+        <span class="label__name">Web Money</span>
+      </div>
+    </div>
+    <div class="footer__contacts">
+      <div class="label">
+        <a href="info@ipsum228.com">
+          <span class="label__icon"></span>
+          <span class="label__name">info@ipsum228.com</span>
+        </a>
+      </div>
+      <div class="label">
+        <a href="https://vk.com" target="_blank" rel="noopener noreferrer">
+          <span class="label__icon"></span>
+          <span class="label__name">Мы вконтакте</span>
+        </a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
