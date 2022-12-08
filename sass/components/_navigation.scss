@@ -1,0 +1,20 @@
+.navigation {
+  @extend %flex-space-between;
+}
+
+.navigation__link {
+  margin-right: $gap-lg;
+  text-transform: uppercase;
+  font-family: $font-family-main;
+  text-decoration: none;
+  color: $color-secondary;
+  font-weight: $font-weight-normal;
+  font-size: $font-size-2xs;
+  &:last-child {
+    margin-right: 0;
+  }
+  &_active {
+    color: $color-logo-ending;
+  }
+}
+

@@ -1,0 +1,35 @@
+.hero {
+  height: 850px;
+  background-image: url('assets/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: right;
+  &__container {
+    padding-top: 203px;
+  }
+  &__buttons {
+    margin-top: $gap-xl;
+  }
+}
+
+.hero__heading {
+  font-family: $font-family-main;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-2xl;
+  text-transform: uppercase;
+  color: $color-primary;
+  width: 780px;
+  line-height: 1.2;
+  margin-bottom: $gap-xl;
+  &_highlighted {
+    color: $color-text-highlight;
+  }
+}
+
+.hero__list {
+  font-size: $font-size-lg;
+  & .list__item {
+    &::before {
+      background-color: $color-text-highlight;
+    }
+  }
+}

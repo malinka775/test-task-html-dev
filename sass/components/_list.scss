@@ -1,0 +1,24 @@
+.list {
+  font-weight: $font-weight-bold;
+  font-family: $font-family-main;
+  &__item {
+    margin-top: $gap-2xs;
+    padding-left: calc($gap-xs + 1px);
+    position: relative;
+    color: $color-text-highlight;
+    font-weight: $font-weight-normal;
+    &:before {
+      position: absolute;
+      content: '';
+      width: 5px;
+      height: 2px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 1px;
+      background-color: $color-text-highlight;
+    }
+    &:first-child {
+      margin-top: $gap-xs;
+    }
+  }
+}

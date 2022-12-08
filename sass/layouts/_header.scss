@@ -1,0 +1,10 @@
+.header {
+  background-color: $color-bg-header;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  &__container {
+    padding: $gap-md 0;
+    @extend %flex-space-between;
+  };
+};

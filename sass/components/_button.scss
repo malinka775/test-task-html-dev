@@ -1,0 +1,24 @@
+.btn {
+  padding: 1.5rem;
+  border-radius: $border-radius-sm;
+  font-size: $font-size-xs;
+  text-transform: uppercase;
+  border-width: $border-width-sm;
+  border-style: solid;
+  &_primary {
+    background-color: $color-primary;
+    color: $color-text-light;
+    border-color: $color-border-primary; 
+  }
+  &_secondary {
+    background-color: $color-secondary;
+    color: $color-text-dark;
+    border-color: $color-border-secondary; 
+  }
+  &_sm {
+    width: $width-btn-md;
+  }
+  &_lg {
+    width: $width-btn-lg;
+  }
+}

@@ -9,9 +9,18 @@ $color-primary: #3e9cdc;
 $color-secondary: #ffffff;
 $color-border-primary: #ffffff;
 $color-border-secondary: #6f6d7b;
+$color-text-light: #ffffff;
+$color-text-dark: #272733;
+$color-text-highlight: #000000;
 
-$font-family: 'Lato', sans-serif;
-$font-family: 'Raleway', sans-serif;
+
+$font-family-accent: 'Raleway', sans-serif;
+$font-family-main: 'Lato', sans-serif;
+
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 800;
+$font-weight-black: 900;
 
 $font-size-logo: 2.8rem;
 $font-size-header: 1.3rem;
@@ -20,7 +29,7 @@ $font-size-2xs: 1.3rem;
 $font-size-xs: 1.5rem;
 $font-size-sm: 1.6rem;
 $font-size-md: 1.8rem;
-$font-size-lg: 20rem;
+$font-size-lg: 2rem;
 $font-size-xl: 2.6rem; 
 $font-size-2xl: 4.8rem;
 
@@ -28,10 +37,18 @@ $width-mobile-sm: 320px;
 $width-mobile-lg: 425px;
 $width-tablet: 768px;
 $width-desktop: 1172px;
+$width-btn-md: 18.3rem;
+$width-btn-lg: 37rem;
 
-$gap-xs: 0.5rem;
-$gap-s: 2rem;
+$gap-2xs: 0.5rem;
+$gap-xs: 1rem;
+$gap-s: 1.5rem;
+$gap-sm: 2rem;
 $gap-md: 3rem;
-$gap-lg: 8rem;
+$gap-lg: 6rem;
+$gap-xl: 8rem;
 
+$border-radius-sm: 4px;
+
+$border-width-sm: 1px;
 

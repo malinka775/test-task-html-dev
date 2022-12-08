@@ -1,0 +1,14 @@
+.logo {
+  font-family: $font-family-accent;
+  font-size: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  &__name {
+    color: $color-logo-main;
+    font-size: $font-size-logo;
+  }
+  &__domain {
+    color: $color-logo-ending;
+    font-size: $font-size-logo;
+  }
+}

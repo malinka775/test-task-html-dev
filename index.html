@@ -9,27 +9,29 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div class="logo">
-        <a href="#" class="sub-domain">LoremIpsum.</a>
-        <a href="#" class="domain">Net</a>
-      </div>
-      <nav class="header__menu menu">
-        <ul class="menu__links">
-          <li class="menu__link">Бизнес</li>
-          <li class="menu__link">О нас</li>
-          <li class="menu__link">Цены</li>
-          <li class="menu__link">Оформить заказ</li>
+  <header class="header">
+    <div class="container header__container">
+      <a href="#" class="logo">
+        <span class="logo__name">LoremIpsum.</span>
+        <span href="#" class="logo__domain">Net</span>
+      </a>
+      <nav class="header__navigation">
+        <ul class="navigation">
+          <li class="navigation__link navigation__link_active">Бизнес</li>
+          <li class="navigation__link">О нас</li>
+          <li class="navigation__link">Цены</li>
+          <li class="navigation__link">Оформить заказ</li>
         </ul>
       </nav>
     </div>
   </header>
   <main>
     <section class="hero">
-      <div class="container">
-        <h1 class="heading">
-          Lorem ipsum dolor sit ametconsectetur adipiscing
+      <div class="container hero__container">
+        <h1 class="hero__heading">
+          Lorem ipsum 
+          <span class="hero__heading_highlighted">dolor sit ametconsectetur</span>
+          adipiscing
         </h1>
         <ul class="hero__list list">
           At vero eos et accusamus et iusto odio dignissimos ducimus!
@@ -116,35 +118,37 @@
     </section>
   </main>
   <footer>
-    <div class="footer__copyright">
-      &#169; 2018 «LoremIpsum.net» Все права защищены.
-    </div>
-    <div class="footer__services">
-      <div class="label">
-        <span class="label__icon"></span>
-        <span class="label__name">Qiwi wallet</span>
+    <div class="container">
+      <div class="footer__copyright">
+        &#169; 2018 «LoremIpsum.net» Все права защищены.
       </div>
-      <div class="label">
-        <span class="label__icon"></span>
-        <span class="label__name">Yandex Money</span>
-      </div>
-      <div class="label">
-        <span class="label__icon"></span>
-        <span class="label__name">Web Money</span>
-      </div>
-    </div>
-    <div class="footer__contacts">
-      <div class="label">
-        <a href="info@ipsum228.com">
+      <div class="footer__services">
+        <div class="label">
           <span class="label__icon"></span>
-          <span class="label__name">info@ipsum228.com</span>
-        </a>
-      </div>
-      <div class="label">
-        <a href="https://vk.com" target="_blank" rel="noopener noreferrer">
+          <span class="label__name">Qiwi wallet</span>
+        </div>
+        <div class="label">
           <span class="label__icon"></span>
-          <span class="label__name">Мы вконтакте</span>
-        </a>
+          <span class="label__name">Yandex Money</span>
+        </div>
+        <div class="label">
+          <span class="label__icon"></span>
+          <span class="label__name">Web Money</span>
+        </div>
+      </div>
+      <div class="footer__contacts">
+        <div class="label">
+          <a href="info@ipsum228.com">
+            <span class="label__icon"></span>
+            <span class="label__name">info@ipsum228.com</span>
+          </a>
+        </div>
+        <div class="label">
+          <a href="https://vk.com" target="_blank" rel="noopener noreferrer">
+            <span class="label__icon"></span>
+            <span class="label__name">Мы вконтакте</span>
+          </a>
+        </div>
       </div>
     </div>
   </footer>
