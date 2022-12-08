@@ -1,0 +1,23 @@
+{
+  "name": "test-task-html-dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "style": "sass sass/main.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malinka775/test-task-html-dev.git"
+  },
+  "author": "Alina Khasanova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/malinka775/test-task-html-dev/issues"
+  },
+  "homepage": "https://github.com/malinka775/test-task-html-dev#readme",
+  "devDependencies": {
+    "sass": "^1.56.1"
+  }
+}
