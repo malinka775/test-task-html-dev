@@ -5,15 +5,30 @@
   text-transform: uppercase;
   border-width: $border-width-sm;
   border-style: solid;
+  cursor: pointer;
   &_primary {
     background-color: $color-primary;
     color: $color-text-light;
-    border-color: $color-border-primary; 
+    border-color: $color-border-primary;
+    &:hover {
+      background-color: $color-primary-hover;
+    }
+    &:active {
+      background-color: $color-primary-active;
+      color: $color-text-light-active;
+    }
   }
   &_secondary {
     background-color: $color-secondary;
     color: $color-text-dark;
     border-color: $color-border-secondary; 
+    &:hover {
+      background-color: $color-secondary-hover;
+    }
+    &:active {
+      background-color: $color-secondary-active;
+      color: $color-text-dark-active;
+    }
   }
   &_sm {
     width: $width-btn-md;

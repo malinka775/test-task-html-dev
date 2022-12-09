@@ -8,12 +8,12 @@
   }
   &__buttons {
     margin-top: $gap-xl;
+    display: flex;
+    gap: $gap-md;
   }
 }
 
 .hero__heading {
-  font-family: $font-family-main;
-  font-weight: $font-weight-bold;
   font-size: $font-size-2xl;
   text-transform: uppercase;
   color: $color-primary;

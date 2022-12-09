@@ -1,16 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Raleway:wght@800&display=swap');
-
 $color-logo-main: #ffffff;
 $color-logo-ending: #42a9ed;
 $color-bg-header: #10101de5;
 $color-bg-main: #272733;
 $color-bg-footer: #3d4050;
 $color-primary: #3e9cdc;
+$color-primary-hover: scale-color($color-primary, $blackness:10%);
+$color-primary-active: scale-color($color-primary, $blackness:5%);
 $color-secondary: #ffffff;
+$color-secondary-hover: scale-color($color-secondary, $blackness:10%);
+$color-secondary-active: scale-color($color-secondary, $blackness:5%);
 $color-border-primary: #ffffff;
 $color-border-secondary: #6f6d7b;
 $color-text-light: #ffffff;
+$color-text-light-active: scale-color($color-text-light, $blackness:20%);
 $color-text-dark: #272733;
+$color-text-dark-active: scale-color($color-text-dark, $lightness:40%);
 $color-text-highlight: #000000;
 
 
