@@ -72,19 +72,51 @@
           </div>
         </div>
         <form id="form">
-          <select name="system-type" id="system-type">
-            <option value="default">Выберите тип системы</option>
-            <option value="sed ut perspiciatis">Sed ut perspiciatis</option>
-            <option value="nemo enim ipsam">Nemo enim ipsam</option>
-            <option value="et harum quidem">Et harum quidem</option>
-            <option value="temporibus autem">Temporibus autem</option>
-            <option value="itaque earum rerum">Itaque earum rerum</option>
-          </select>
-          <input type="email" name="email" id="email">
-          <input type="text" name="" id="">
+          <div class="select" id="system-type-select">
+            <button class="input select__control select-control">
+              <span class="select-label" id="select-label">Выберите тип системы</span> 
+              <div class="select-control__icon"></div>
+            </button>
+            <div class="select__options-wrapper">
+              <div class="select__options">
+                <label for="select-sed" class="select__option" >Sed ut perspiciatis</label>
+                <input type="radio" name="system-type" id="select-sed" value="sed ut perspiciatis"></input>
+                
+                <label for="select-nemo" class="select__option" >Nemo enim ipsam</label>
+                <input type="radio" name="system-type" id="select-nemo" value="nemo enim ipsam"></input>
+                
+                <label for="select-et" class="select__option" >Et harum quidem</label>
+                <input type="radio" name="system-type" id="select-et" value="et harum quidem"></input>
+                
+                <label for="select-temporibus" class="select__option" >Temporibus autem</label>
+                <input type="radio" name="system-type" id="select-temporibus" value="temporibus autem"></input>
+                
+                <label for="select-itaque" class="select__option" >Itaque earum rerum</label>
+                <input type="radio" name="system-type" id="select-itaque" value="itaque earum rerum"></input>
+                
+                <label for="select-1" class="select__option" >1</label>
+                <input type="radio" name="system-type" id="select-1" value="1"></input>
+                
+                <label for="select-2" class="select__option" >2</label>
+                <input type="radio" name="system-type" id="select-2" value="2"></input>
+                
+                <label for="select-3" class="select__option" >3</label>
+                <input type="radio" name="system-type" id="select-3" value="3"></input>
+                
+                <label for="select-4" class="select__option" >4</label>
+                <input type="radio" name="system-type" id="select-4" value="4"></input>
+                
+                <label for="select-5" class="select__option" >5</label>
+                <input type="radio" name="system-type" id="select-5" value="5"></input>
+              </div>
+            </div>
+            
+          </div>
+          <input class="input" type="email" name="email" id="email">
+          <input class="input" type="text" name="" id="">
           <label for="some-range-name">Sed ut perspiciatis, unde omnis iste natus</label> 
           <div class="range__info"><span class="range-value">75</span> %</div>
-          <input type="range" id="range" name="some-range-name" min="0" max="100" value="75">
+          <input class="input" type="range" id="range" name="some-range-name" min="0" max="100" value="75">
           <label class="btn btn-secondary btn_lg">
             <input type="file" name="file" id="file">
           </label>
@@ -128,5 +160,6 @@
       </div>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>

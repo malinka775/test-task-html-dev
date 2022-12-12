@@ -1,0 +1,80 @@
+.select {
+  width: $width-input;
+  font-family: $font-family-main;
+  font-size: $font-size-md;
+  font-weight: $font-weight-normal;
+  position: relative;
+  input[type="radio"] {
+    display: none;
+  }
+  &-control {
+    position: relative;
+    text-align: left;
+    cursor: pointer;
+    &__icon {
+      @include box(20px);
+      background-image: url('assets/shevron-down.svg');
+      position: absolute;
+      right: $gap-xs;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &__options-wrapper {
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    padding: 2px 4px 3px 0;
+    // opacity: 0;
+    // visibility: hidden;
+    height: 0;
+    transition: all $transition-duration-basic 0.3s;
+  }
+  &__options {
+    background-color: rgba($color-bg-main, 0.9);
+    padding-top: 1rem;
+    // height: 180px;
+    overflow-y: auto;
+    width: 100%;
+    padding-right: 5px;
+    height: 0;
+  }
+  &__options::-webkit-scrollbar-track {
+    border-radius: $border-radius-sm;
+  }
+  &__option {
+    display: block;
+    color: $color-text-light;
+    padding: 0.6rem 1rem;
+    transition: color $transition-duration-basic $transition-function-basic;
+    cursor: pointer;
+    &:hover {
+      color: $color-text-light-hover;
+    }
+  }
+}
+
+.select_active {
+  border: $border-width-sm solid $color-stroke-select;
+  border-radius: $border-radius-xs;
+  .select {
+    &-control {
+      color: $color-text-light;
+      background-color: rgba($color-stroke-select, 0.85);
+      border: none;
+      border-radius: 0;
+      &__icon {
+        background-image: url('assets/shevron-up-contrast.svg');
+      }
+    }
+    &__options-wrapper {
+      background-color: $color-bg-additional;
+      // opacity: 1;
+      // visibility: visible;
+      height: auto;
+    }
+    &__options {
+      height: 180px;
+    }
+  }
+}
