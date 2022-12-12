@@ -1,5 +1,5 @@
 .flow {
-  @extend %flex-space-between;
+  @extend %flex-center;
   align-items: flex-start;
   flex-wrap: wrap;
   >* {

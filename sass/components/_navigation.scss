@@ -1,5 +1,6 @@
 .navigation {
   @extend %flex-space-between;
+  align-items: center;
 }
 
 .navigation__link {
