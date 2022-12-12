@@ -1,5 +1,11 @@
-.stage {
-  width: 188px;
+.stage {  
+  &__description {
+    width: 188px;
+    font-size: $font-size-sm;
+    text-align: center;
+    color: $color-text-light;
+    margin: $gap-sm 0 0;
+  }
   &__icon {
     margin: auto;
     @include box ($stage-icon-size);
@@ -9,11 +15,49 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-  &__description {
-    width: 188px;
-    font-size: $font-size-sm;
-    text-align: center;
-    color: $color-text-light;
-    margin: $gap-sm 0 0;
+  &_divided {
+    width: 220px;
+    .stage__description {
+      margin: $gap-sm auto 0;
+    }
+    .stage__icon {
+      position: relative;
+      &:before,
+      &:after {
+        content: '';
+        height: 6px;
+        background-image: url('assets/workflow/dots.svg');
+        background-position: right;
+        position: absolute;
+        top: 50%;
+      }
+      &:after {
+        width: 58px;
+        right: -10px;
+        transform: translate(100%, -50%);
+      }
+      &:before {
+        width: 32px;
+        left: -10px;
+        transform: translate(-100%, -50%);
+      }
+    }
+    &:first-child {
+      .stage__icon {
+        &:before{
+          width: 0;
+        }
+      }
+    }
+    &:last-child {
+      .stage__icon {
+        &::after {
+          width: 0;
+        }
+      }
+    }
   }
 }
+
+
+
