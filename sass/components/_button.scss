@@ -20,14 +20,14 @@
   }
   &_secondary {
     background-color: $color-secondary;
-    color: $color-text-dark;
+    color: $color-text-regular;
     border-color: $color-border-secondary; 
     &:hover {
       background-color: $color-secondary-hover;
     }
     &:active {
       background-color: $color-secondary-active;
-      color: $color-text-dark-active;
+      color: $color-text-regular-active;
     }
   }
   &_sm {

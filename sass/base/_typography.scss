@@ -3,7 +3,14 @@
 h1, h2 {
   font-family: $font-family-main;
   font-weight: $font-weight-bold;
-  font-family: $font-family-main;
   text-transform: uppercase;
 };
 
+.highlight {
+  color: $color-primary;
+}
+
+p {
+  font-family: $font-family-main;
+  font-weight: $font-weight-normal;
+}
