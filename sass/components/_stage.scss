@@ -1,0 +1,19 @@
+.stage {
+  width: 188px;
+  &__icon {
+    margin: auto;
+    @include box ($stage-icon-size);
+    background-color: $stage-icon-bg;
+    border: $stage-icon-border-width solid $stage-icon-border-color;
+    border-radius: $stage-icon-border-radius;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__description {
+    width: 188px;
+    font-size: $font-size-sm;
+    text-align: center;
+    color: $color-text-light;
+    margin: $gap-sm 0 0;
+  }
+}

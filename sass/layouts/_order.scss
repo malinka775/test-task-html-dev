@@ -1,0 +1,35 @@
+.order {
+  background: url('assets/order-bg.png') center center/cover no-repeat;
+  background-color: $color-bg-main;
+  &__container {
+    padding: 120px 0 150px;
+  }
+  &__title {
+    font-size: $font-size-xl;
+    color: $color-text-light;
+    text-align: center;
+  }
+  &__remark {
+    margin-top: $gap-md;
+    font-size: $font-size-md;
+    color: $color-text-remark;
+    text-align: center;
+  }
+  &__workflow {
+    .loupe {
+      background-image: url('assets/workflow/loupe.svg');
+    }
+    .percent {
+      background-image: url('assets/workflow/percent.svg');
+    }
+    .document {
+      background-image: url('assets/workflow/document.svg');
+    }
+    .envelope {
+      background-image: url('assets/workflow/envelope.svg');
+    }
+    .cash {
+      background-image: url('assets/workflow/cash.svg');
+    }
+  }
+}

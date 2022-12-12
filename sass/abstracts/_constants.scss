@@ -2,7 +2,7 @@ $color-logo-main: #ffffff;
 $color-logo-ending: #42a9ed;
 $color-bg-header: #10101de5;
 $color-bg-main: #272733;
-$color-bg-footer: #3d4050;
+$color-bg-footer: #3d4050; 
 $color-primary: #3e9cdc;
 $color-primary-hover: scale-color($color-primary, $blackness:10%);
 $color-primary-active: scale-color($color-primary, $blackness:5%);
@@ -13,9 +13,10 @@ $color-border-primary: #ffffff;
 $color-border-secondary: #6f6d7b;
 $color-text-light: #ffffff;
 $color-text-light-active: scale-color($color-text-light, $blackness:20%);
-$color-text-dark: #272733;
-$color-text-dark-active: scale-color($color-text-dark, $lightness:40%);
-$color-text-highlight: #000000;
+$color-text-regular: #272733;
+$color-text-regular-active: scale-color($color-text-regular, $lightness:40%);
+$color-text-dark: #000000;
+$color-text-remark: #bbbbbb;
 
 
 $font-family-accent: 'Raleway', sans-serif;
@@ -34,7 +35,7 @@ $font-size-xs: 1.5rem;
 $font-size-sm: 1.6rem;
 $font-size-md: 1.8rem;
 $font-size-lg: 2rem;
-$font-size-xl: 2.6rem; 
+$font-size-xl: 3.6rem; 
 $font-size-2xl: 4.8rem;
 
 $width-mobile-sm: 320px;
@@ -43,6 +44,7 @@ $width-tablet: 768px;
 $width-desktop: 1172px;
 $width-btn-md: 18.3rem;
 $width-btn-lg: 37rem;
+$width-select: $width-btn-lg;
 
 $gap-2xs: 0.5rem;
 $gap-xs: 1rem;
@@ -53,6 +55,13 @@ $gap-lg: 6rem;
 $gap-xl: 8rem;
 
 $border-radius-sm: 4px;
-
 $border-width-sm: 1px;
+$border-radius-round: 50%;
+
+$stage-icon-size: 100px;
+$stage-icon-bg: $color-primary;
+$stage-icon-border-color: #286690;
+$stage-icon-border-width: 5px; 
+$stage-icon-border-radius: $border-radius-round;
+
 

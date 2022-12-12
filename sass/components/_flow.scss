@@ -1,0 +1,8 @@
+.flow {
+  @extend %flex-space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  >* {
+    margin: 0 5px 10px;
+  }
+}

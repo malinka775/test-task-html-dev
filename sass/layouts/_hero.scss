@@ -1,10 +1,9 @@
 .hero {
-  height: 850px;
-  background-image: url('assets/hero-bg.jpg');
-  background-repeat: no-repeat;
-  background-position: right;
+  // height: 850px;
+  background: url('assets/hero-bg.jpg') center center/cover no-repeat;
   &__container {
     padding-top: 203px;
+    padding-bottom: 200px;
   }
   &__buttons {
     margin-top: $gap-xl;
@@ -16,20 +15,17 @@
 .hero__heading {
   font-size: $font-size-2xl;
   text-transform: uppercase;
-  color: $color-primary;
+  color: $color-text-dark;
   width: 780px;
   line-height: 1.2;
   margin-bottom: $gap-xl;
-  &_highlighted {
-    color: $color-text-highlight;
-  }
 }
 
 .hero__list {
   font-size: $font-size-lg;
   & .list__item {
     &::before {
-      background-color: $color-text-highlight;
+      background-color: $color-text-dark;
     }
   }
 }

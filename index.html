@@ -29,9 +29,9 @@
     <section class="hero">
       <div class="container hero__container">
         <h1 class="hero__heading">
-          Lorem ipsum 
-          <span class="hero__heading_highlighted">dolor sit ametconsectetur</span>
-          adipiscing
+          <span class="highlight">Lorem ipsum </span>
+          dolor sit ametconsectetur
+          <span class="highlight">adipiscing</span>
         </h1>
         <ul class="hero__list list">
           At vero eos et accusamus et iusto odio dignissimos ducimus!
@@ -46,56 +46,61 @@
       </div>
     </section>
     <section class="section order">
-      <div class="container">
-        <h2 class="section__title">Оформление  Заказа</h2>
-        <p class="section__remark">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
-        <div class="workflow">
-          <div class="workflow__stage stage">
-            <div class="stage__icon"></div>
-            <p class="stage__description"></p>
+      <div class="container order__container">
+        <h2 class="order__title">Оформление  <span class="highlight"> Заказа</span></h2>
+        <p class="order__remark">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+        <div class="flow order__workflow">
+          <div class="order__bg"></div>
+          <div class="flow__stage stage stage_divided">
+            <div class="stage__icon loupe"></div>
+            <p class="stage__description">Lorem ipsum dolorsit amet</p>
           </div>
-          <div class="divider">
+          <!-- <div class="divider"> -->
+            <!-- <span class="divider__item"></span>
             <span class="divider__item"></span>
             <span class="divider__item"></span>
             <span class="divider__item"></span>
-            <span class="divider__item"></span>
+            <span class="divider__item"></span> -->
+          <!-- </div> -->
+          <div class="flow__stage stage stage_divided">
+            <div class="stage__icon percent"></div>
+            <p class="stage__description">Сonsecteturadipiscing elit</p>
           </div>
-          <div class="workflow__stage stage">
-            <div class="stage__icon"></div>
-            <p class="stage__description"></p>
+          <!-- <div class="divider"> -->
+            <!-- <span class="divider__item"></span>
+            <span class="divider__item"></span>
+            <span class="divider__item"></span>
+            <span class="divider__item"></span>
+            <span class="divider__item"></span> -->
+          <!-- </div> -->
+          <div class="flow__stage stage stage_divided">
+            <div class="stage__icon document"></div>
+            <p class="stage__description">Sed do eiusmod tempor</p>
           </div>
-          <div class="divider">
+          <!-- <div class="divider"> -->
+            <!-- <span class="divider__item"></span>
             <span class="divider__item"></span>
             <span class="divider__item"></span>
             <span class="divider__item"></span>
-            <span class="divider__item"></span>
+            <span class="divider__item"></span> -->
+          <!-- </div> -->
+          <div class="flow__stage stage stage_divided">
+            <div class="stage__icon envelope"></div>
+            <p class="stage__description">Esse cillum doloreeu fugiat</p>
           </div>
-          <div class="workflow__stage stage">
-            <div class="stage__icon"></div>
-            <p class="stage__description"></p>
-          </div>
-          <div class="divider">
+          <!-- <div class="divider"> -->
+            <!-- <span class="divider__item"></span>
             <span class="divider__item"></span>
             <span class="divider__item"></span>
             <span class="divider__item"></span>
-            <span class="divider__item"></span>
-          </div>
-          <div class="workflow__stage stage">
-            <div class="stage__icon"></div>
-            <p class="stage__description"></p>
-          </div>
-          <div class="divider">
-            <span class="divider__item"></span>
-            <span class="divider__item"></span>
-            <span class="divider__item"></span>
-            <span class="divider__item"></span>
-          </div>
-          <div class="workflow__stage stage">
-            <div class="stage__icon"></div>
-            <p class="stage__description"></p>
+            <span class="divider__item"></span> -->
+          <!-- </div> -->
+          <div class="flow__stage stage stage_divided">
+            <div class="stage__icon cash"></div>
+            <p class="stage__description">Excepteur sint occaecat cupidatat non proident</p>
           </div>
         </div>
-        <form action="post" action="#">
+        <form id="form">
           <select name="system-type" id="system-type">
             <option value="default">Выберите тип системы</option>
             <option value="sed ut perspiciatis">Sed ut perspiciatis</option>
@@ -112,7 +117,7 @@
           <label class="btn btn-secondary btn_lg">
             <input type="file" name="file" id="file">
           </label>
-          <button type="submit" class="btn btn-primary btn_lg">Отправить</button>
+          <button type="submit" class="btn btn-primary btn_lg" id="submit-form">Отправить</button>
         </form>
       </div>
     </section>
