@@ -29,6 +29,7 @@
         background-image: url('assets/workflow/dots.svg');
         background-position: right;
         position: absolute;
+        z-index: 1;
         top: 50%;
       }
       &:after {
