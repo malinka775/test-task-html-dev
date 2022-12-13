@@ -5,6 +5,7 @@
   width: 100%;
   height: $height-range-input;
   border-radius: $border-radius-xs;
+  cursor: pointer;
 }
 
 #range::-webkit-slider-thumb {

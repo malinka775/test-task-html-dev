@@ -3,7 +3,12 @@
   background-color: $color-secondary;
   color: $color-text-regular;
   border: $border-width-sm solid $color-primary;
+  transition: background-color $transition-function-basic $transition-duration-basic;
+  &:hover {
+    background-color: $color-secondary-hover;
+  }
   >label {
+    cursor: pointer;
     @extend %flex-center;
     align-items: center;
     >img {

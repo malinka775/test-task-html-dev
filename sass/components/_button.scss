@@ -6,6 +6,7 @@
   border-width: $border-width-xs;
   border-style: solid;
   cursor: pointer;
+  transition: background-color $transition-function-basic $transition-duration-basic;
   &_primary {
     background-color: $color-primary;
     color: $color-text-light;

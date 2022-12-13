@@ -11,10 +11,16 @@
     text-decoration: none;
     .label__name {
       color: $color-text-light;
+      transition: color $transition-function-basic $transition-duration-basic;
     }
     &:visited {
       .label__name {
         color: $color-text-light;
+      }
+    }
+    &:hover {
+      .label__name {
+       color: $color-primary;
       }
     }
   

@@ -15,13 +15,15 @@
   .header__navigation {
     position: fixed;
     height: 100vh;
+    width: 80%;
+    min-width: $width-mobile-sm;
     right: -100%;
     top: 0;
     background-color: rgba($color-bg-header, 0.9);
     transition: all $transition-duration-basic $transition-function-basic;
     .navigation {
       height: 100%;
-      width: 100%;
+      width: $width-mobile-sm;
       flex-direction: column;
       padding: $gap-sm;
       align-items: center;

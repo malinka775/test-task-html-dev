@@ -12,6 +12,10 @@
   a {
     text-decoration: none;
     color: $color-secondary;
+    transition: color $transition-function-basic $transition-duration-basic;
+    &:hover {
+      color: $color-primary;
+    }
   }
   &:last-child {
     margin-right: 0;
