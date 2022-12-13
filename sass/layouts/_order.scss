@@ -52,3 +52,10 @@
     @extend %flex-space-between;
   }
 }
+
+#submit-form {
+  justify-self: center;
+  margin-top: $gap-sm;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}

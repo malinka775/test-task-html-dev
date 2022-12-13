@@ -1,0 +1,18 @@
+.file-input {
+  @extend %flex-center;
+  font-family: $font-family-main;
+  align-items: center;
+  background-color: $color-secondary;
+  color: $color-text-regular;
+  text-transform: uppercase;
+  text-align: center;
+  >img {
+    margin-right: $gap-xs;
+  }
+  input {
+    padding: 0px;
+    border: none;
+    border-radius: 0;
+    display: none;
+  }
+}
