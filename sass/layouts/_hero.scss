@@ -29,3 +29,16 @@
     }
   }
 }
+
+@media screen and (max-width: $width-tablet) {
+  .hero__heading {
+    width: auto;
+    font-size: $font-size-xl;
+  }
+}
+
+@media screen and (max-width: $width-mobile-lg) {
+  html {
+    font-size: 8px;
+  }
+}
