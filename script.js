@@ -4,6 +4,13 @@ const selectBtn = select.querySelector('.select-control');
 const selectOptions = select.querySelectorAll('input[name="system-type"]');
 const selectBtnLabel = document.getElementById('select-label');
 const uploadBtn = document.getElementById('upload');
+const burger = document.querySelector('.burger-menu');
+const nav = document.querySelector('.header__navigation');
+
+burger.addEventListener('click', () => {
+  burger.classList.toggle('burger-menu_active');
+  nav.classList.toggle('header__navigation_active');
+})
 
 selectBtn.addEventListener('click', (e) => {
   e.preventDefault();

@@ -12,3 +12,9 @@
     font-size: $font-size-logo;
   }
 }
+
+@media screen and (max-width: $width-tablet) {
+  html{
+    font-size: 9px;
+  }
+}

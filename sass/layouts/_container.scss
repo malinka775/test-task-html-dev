@@ -2,3 +2,9 @@
   max-width: $width-desktop;
   margin: 0 auto;
 }
+
+@media screen and (max-width: $width-desktop) {
+ .container {
+  margin: 0 $gap-sm;
+ }  
+}
