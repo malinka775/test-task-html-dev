@@ -60,5 +60,11 @@
   }
 }
 
+@media screen and (max-width: $width-mobile-lg) {
+  .stage__icon {
+    @include box (calc(0.9 * $stage-icon-size));
+  }
+}
+
 
 

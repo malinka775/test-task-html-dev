@@ -16,6 +16,7 @@
     text-align: center;
   }
   &__workflow {
+    margin: $gap-xl 0;
     .loupe {
       background-image: url('assets/workflow/loupe.svg');
     }
