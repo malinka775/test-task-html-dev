@@ -1,5 +1,6 @@
 .select {
-  width: $width-input;
+  width: 100%;
+  max-width: $width-input;
   font-family: $font-family-main;
   font-size: $font-size-md;
   font-weight: $font-weight-normal;
@@ -11,6 +12,7 @@
     position: relative;
     text-align: left;
     cursor: pointer;
+    width: 100%;
     &__icon {
       @include box(20px);
       background-image: url('assets/shevron-down.svg');

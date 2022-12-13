@@ -8,3 +8,9 @@
   margin: 0 $gap-sm;
  }  
 }
+
+@media screen and (max-width: $width-mobile-lg) {
+  .container {
+   margin: 0 $gap-xs;
+  }  
+ }
