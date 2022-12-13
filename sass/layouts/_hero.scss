@@ -30,10 +30,17 @@
   }
 }
 
-@media screen and (max-width: $width-tablet) {
+@media screen and (max-width: $width-desktop) {
   .hero__heading {
     width: auto;
-    font-size: $font-size-xl;
+  }
+}
+
+@media screen and (max-width: $width-tablet) {
+  .hero {
+    &__heading {
+      font-size: $font-size-xl;
+    }
   }
 }
 
