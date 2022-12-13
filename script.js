@@ -6,10 +6,25 @@ const selectBtnLabel = document.getElementById('select-label');
 const uploadBtn = document.getElementById('upload');
 const burger = document.querySelector('.burger-menu');
 const nav = document.querySelector('.header__navigation');
+const navLinks = document.querySelectorAll('.navigation__link');
 
 burger.addEventListener('click', () => {
-  burger.classList.toggle('burger-menu_active');
-  nav.classList.toggle('header__navigation_active');
+  toggleActive(burger, 'burger-menu');
+  toggleActive(nav, 'header__navigation');
+  document.body.classList.toggle('lock-scroll');
+})
+
+navLinks.forEach((link) => {
+  link.addEventListener('click', (e) => {
+    navLinks.forEach((link) => {
+      if (e.target.closest('.navigation__link') !== link) {
+        link.classList.remove('navigation__link_active');
+      } else {
+        link.classList.add('navigation__link_active');
+      }
+    })
+    closeBurger();
+  })
 })
 
 selectBtn.addEventListener('click', (e) => {
@@ -29,17 +44,21 @@ uploadBtn.addEventListener('keydown', (e) => {
   if (e.key === "Enter") {
     uploadBtn.querySelector('label').click();
   }
-  
 })
 
-const toggleActive = (element, basicClass) => { //node, basic class to which _active will be applied
+function toggleActive(element, basicClass) { //node, basic class to which _active will be applied
   const activeClass = `${basicClass}_active`;
   element.classList.toggle(activeClass);
 }
 
-const setSelected = (id) => {
+function setSelected(id) {
   const selectedLabel = select.querySelector(`label[for='${id}']`).innerText;
   selectBtnLabel.innerText = selectedLabel;
+}
+
+function closeBurger() {
+  burger.classList.remove('burger-menu_active');
+  nav.classList.remove('header__navigation_active');
 }
 
 
