@@ -1,0 +1,31 @@
+#range {
+  -webkit-appearance: none;
+  background: rgba($color-border-primary, 0.7);
+  border: $border-light;
+  width: 100%;
+  height: $height-range-input;
+  border-radius: $border-radius-xs;
+}
+
+#range::-webkit-slider-thumb {
+ @include slider-thumb;
+}
+
+#range::-moz-range-thumb {
+  @include slider-thumb;
+}
+
+#range::-ms-thumb {
+  @include slider-thumb;
+}
+
+.range {
+  &__info {
+    font-family: $font-family-main;
+    color: $color-text-light;
+    font-size: $font-size-md;
+    font-weight: $font-weight-normal;
+  }
+}
+
+

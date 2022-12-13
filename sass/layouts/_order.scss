@@ -33,3 +33,22 @@
     }
   }
 }
+
+#form {
+  display: grid;
+  grid-template-columns: repeat(3, $width-btn-lg);
+  grid-gap: $gap-md;
+}
+
+.range {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  @extend %flex-space-between;
+  flex-direction: column;
+  >* {
+    width: 100%;
+  }
+  &__info {
+    @extend %flex-space-between;
+  }
+}

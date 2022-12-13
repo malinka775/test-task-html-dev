@@ -113,9 +113,13 @@
           </div>
           <input class="input" type="email" name="email" id="email">
           <input class="input" type="text" name="" id="">
-          <label for="some-range-name">Sed ut perspiciatis, unde omnis iste natus</label> 
-          <div class="range__info"><span class="range-value">75</span> %</div>
-          <input class="input" type="range" id="range" name="some-range-name" min="0" max="100" value="75">
+          <div class="range">
+            <div class="range__info">
+              <label for="some-range-name">Sed ut perspiciatis, unde omnis iste natus</label> 
+              <div class="range__percent"><output id="rangevalue" class="range-value">75</output> %</div>
+            </div>
+            <input type="range" id="range" name="some-range-name" min="0" max="100" value="75" oninput="rangevalue.value=value">
+          </div>
           <label class="btn btn-secondary btn_lg">
             <input type="file" name="file" id="file">
           </label>

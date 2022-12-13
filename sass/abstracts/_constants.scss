@@ -52,6 +52,7 @@ $width-input: $width-btn-lg;
 $width-select: $width-btn-lg;
 
 $height-select: 228px;
+$height-range-input: 6px;
 
 $gap-2xs: 0.5rem;
 $gap-xs: 1rem;
@@ -64,13 +65,15 @@ $gap-xl: 8rem;
 $border-radius-xs: 3px;
 $border-radius-sm: 4px;
 $border-width-sm: 1px;
+$border-width-md: 3px;
+$border-width-lg: 5px;
 $border-radius-round: 50%;
 $border-light: $border-width-sm solid $color-secondary;
 
 $stage-icon-size: 100px;
 $stage-icon-bg: $color-primary;
 $stage-icon-border-color: $color-primary-dark;
-$stage-icon-border-width: 5px; 
+$stage-icon-border-width: $border-width-lg; 
 $stage-icon-border-radius: $border-radius-round;
 
 $transition-duration-basic: 0.5s;
