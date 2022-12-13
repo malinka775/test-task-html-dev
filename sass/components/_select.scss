@@ -50,16 +50,17 @@
     }
   }
 }
-
 .select_active {
-  
   .select {
     &-control {
-      border: $border-width-sm solid $color-stroke-select;
-      border-bottom: $border-width-sm solid rgba($color-stroke-select, 0.85);
+      border: $border-width-xs solid $color-stroke-select;
+      border-bottom: $border-width-xs solid rgba($color-stroke-select, 0.85);
       border-radius: $border-radius-xs $border-radius-xs 0 0;
       color: $color-text-light;
       background-color: rgba($color-stroke-select, 0.85);
+      &:focus {
+        outline: none;
+      }
       &__icon {
         background-image: url('assets/shevron-up-contrast.svg');
       }
@@ -67,7 +68,7 @@
     &__options-wrapper {
       display: block;
       background-color: $color-bg-main;
-      border: $border-width-sm solid $color-stroke-select;
+      border: $border-width-xs solid $color-stroke-select;
       border-top: none;
       border-radius: 0 0 $border-radius-xs $border-radius-xs;
       height: auto;

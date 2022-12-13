@@ -10,7 +10,7 @@
     >div {
       @extend %flex-space-between;
       flex-grow: 1;
-      border-right: $border-width-sm solid #c3c3c3;
+      border-right: $border-width-xs solid #c3c3c3;
       padding: 0 4rem;
       gap: 3.8rem;
       &:first-child {

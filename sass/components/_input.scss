@@ -7,4 +7,10 @@
   border-radius: $border-radius-xs;
   padding: 1.2rem 1rem;
   width: $width-input;
+  &::placeholder {
+    color: $color-text-regular;
+  }
+  &:focus {
+    outline: $border-width-sm solid $color-primary;
+  }
 }
