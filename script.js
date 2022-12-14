@@ -1,3 +1,4 @@
+import './sass/main.scss';
 
 const select = document.getElementById('system-type-select');
 const selectBtn = select.querySelector('.select-control');
@@ -59,6 +60,7 @@ function setSelected(id) {
 function closeBurger() {
   burger.classList.remove('burger-menu_active');
   nav.classList.remove('header__navigation_active');
+  document.body.classList.remove('lock-scroll');
 }
 
 

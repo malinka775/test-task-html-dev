@@ -7,13 +7,18 @@
   &:hover {
     background-color: $color-secondary-hover;
   }
+  &__img {
+    background-image: url('../assets/file.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-right: $gap-xs;
+  }
   >label {
     cursor: pointer;
     @extend %flex-center;
     align-items: center;
-    >img {
-      margin-right: $gap-xs;
-    }
   }
   input {
     padding: 0px;

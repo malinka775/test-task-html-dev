@@ -1,5 +1,5 @@
 .order {
-  background: url('assets/order-bg.png') center center/cover no-repeat;
+  background: url('../assets/order-bg.png') center center/cover no-repeat;
   background-color: $color-bg-main;
   &__container {
     padding: 120px 0 150px;
@@ -18,19 +18,19 @@
   &__workflow {
     margin: $gap-xl 0;
     .loupe {
-      background-image: url('assets/workflow/loupe.svg');
+      background-image: url('../assets/workflow/loupe.svg');
     }
     .percent {
-      background-image: url('assets/workflow/percent.svg');
+      background-image: url('../assets/workflow/percent.svg');
     }
     .document {
-      background-image: url('assets/workflow/document.svg');
+      background-image: url('../assets/workflow/document.svg');
     }
     .envelope {
-      background-image: url('assets/workflow/envelope.svg');
+      background-image: url('../assets/workflow/envelope.svg');
     }
     .cash {
-      background-image: url('assets/workflow/cash.svg');
+      background-image: url('../assets/workflow/cash.svg');
     }
   }
 }
